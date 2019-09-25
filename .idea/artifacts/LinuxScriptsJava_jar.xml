@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="LinuxScriptsJava:jar">
-    <output-path>$PROJECT_DIR$/classes/artifacts/LinuxScriptsJava_jar</output-path>
+    <output-path>$PROJECT_DIR$/output</output-path>
     <root id="archive" name="LinuxScriptsJava.jar">
       <element id="module-output" name="LinuxScriptsJava" />
     </root>
