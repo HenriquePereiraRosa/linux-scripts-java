@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/output</output-path>
     <root id="archive" name="LinuxScriptsJava.jar">
       <element id="module-output" name="LinuxScriptsJava" />
+      <element id="library" level="application" name="commons-io-2.6" />
     </root>
   </artifact>
 </component>

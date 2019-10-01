@@ -3,6 +3,7 @@ package br.com.insper.agil.controller;
 import br.com.insper.agil.event.Trigger;
 import br.com.insper.agil.event.TriggerHandler;
 import br.com.insper.agil.resources.strings.StringResources;
+import br.com.insper.agil.util.FileHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -14,6 +15,10 @@ import java.util.ResourceBundle;
 
 public class Layout1Controller {
 
+
+	public static String NET_FILE = "/etc/NetworkManager/system-connections";
+
+	private FileHandler fh;
 	private Trigger trigger;
 	private TriggerHandler tgrHandler;
 
@@ -35,6 +40,7 @@ public class Layout1Controller {
 		assert btnOK != null : "fx:id=\"btnOK\" was not injected: check your FXML file 'Layout1.fxml'.";
 		assert imgInsper != null : "fx:id=\"imgInsper\" was not injected: check your FXML file 'Layout1.fxml'.";
 
+		fh = new FileHandler();
 		trigger = new Trigger();
 		tgrHandler = new TriggerHandler();
 
@@ -49,6 +55,9 @@ public class Layout1Controller {
 	@FXML
 	void close(ActionEvent event) {
 		System.out.println("Closing...");
+
+		System.out.println("RevoveFile(): " + fh.removeFile(NET_FILE));
+
 		System.exit(0);
 	}
 
