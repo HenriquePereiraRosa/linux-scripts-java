@@ -1,5 +1,3 @@
-# multi-deployer
-Multi deployer of mobiles apps. One click various deploys.
+# Linux Scripts with Java
+Java code to run in Ubuntu 18. Triggered by scripts in linux.
 
-## Youtube demo video:
-	https://youtu.be/5HFkHJMZ7UE
